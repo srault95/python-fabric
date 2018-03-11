@@ -14,15 +14,15 @@ script:
 - ./dist/fabric-py27-x86-64 --version
 
 before_deploy:
-  - git config --local user.name "srault95"
-  - git config --local user.email "stephane.rault@radicalspam.org"
-  - git tag "$(head -1 version)"
+- git config --local user.name "srault95"
+- git config --local user.email "stephane.rault@radicalspam.org"
+- git tag "$(head -1 version)"
 
-#deploy:
-#  provider: releases
-#  api_key:
-#    secure: qFArBflpq4bkLCcReb4dwVpJp8gZtKWRbrcf2czzIPla9s+h0SAy9A5V9nSxvg5HVbzdmdQF9CMZEdS5nCOLLawAJDY+R6YqDelAB5UArafmKKpFtGCr7agcbR3GDYyJOGkXrDc4h9DwkhKOnklybZJpotFMRfVz+CKvstRax2TlpdQBbLnEXzAyqgQ5SzLxOjkSGYxAtu772kcH+O3cnkO8tNZu4d2cP2YCeIH5FX93Bi208QLdF8bbWQBmD22chvykJ7LM+J4J8GFakJjDrZ9oimFAajtixA7WVUfEoDTpMIn18+CDtAXkF4ulZ4hUPlIZEa7r3IRhvoQLlyfqQcQG2/oVeiJER1R2/RiEnzTsYgViogPtc/8+RhBEnvflnQq8/VjisExU4fmvKc7m3hW/Jirf1R/Pw1Ljv2IMtj1T8MJxh47htLvmXGHEY1x5rLrMnpjpi30Bi8/6Vj/wlEDHQsAcUEzlITlcVhD9qUwAHZmKN8EXcOEVIcZbffgril9kI55g++4moAG3WcU9GrNcDrK0foKlFeZ2szvYlCA4qExwygt2+V0opBuXO1f/ZboO+j+F1mhUKuPmKOD2sr8EH8NJP3BTjhuheeviLb0ArU1n837FlvefFYl1gJRDChu+ABNFdUE9dVjA/uQEcFpssK17PMQ2QdBXFRGWQYU=
-#  file: dist/fabric-py27-x86-64
-#  skip_cleanup: true
-#  on:
-#    branch: master
+deploy:
+  provider: releases
+  api_key:
+    secure: KbPy8h2PHEtrn47LM8v5D2uncgRkPWw84iheDZG4eMPdbr95L0RZmjkIRvbKDbf0yCYwlywdttjLuRS9cGSDpTNbD7cXQtZut3HfYm9j9vTOEopDOmZVdFi+TVwajoOM0cmKro7qyvKmsiHteqgARXG+i1Xg9NPilCwTjdnGfAldt9xhnGUVJtodLFd7D+QE1v2M7xL6AP3XW4KekU6G8bV+Re0TlcJ1b8QCMjaWY6+WOoQPWytbZ3upKTpzllzTSafiRZxmN4wUgBNVkofr2PCj7rNgvKLbSJ3FII4FjYt7Y8szghYsvQ7lcvh7yYB2zpgDnJL4XvukA348b/OzOG+zqSZaNepcce35JmhbV6xpqYSIt4Cw+AWENoGPb1II0w2flimqOEllkHXo4WMI+l0HLSVLUaCH8tFqqYFwcS4SUweUA5faeNGaJ2mB9JfjLEiIzwZAl8QhK1dtrj+AUYnM58j9QAqMWiqbnYkyUSeYb3fx3ahGdbRTLhjMRPBO8DV7mZCoKav6nlno+4VKVPrhxbzPEyZ1yJ/+A2TF+MG7EQJjDWMXTzc/bwm2LCy6BC8BM/YCRW7AsVq/6Zk+zUAvB915tGU0f6eX9XqxE2/zRqesaUOyC1qaaeXRvlVMVg9XGV2giIWvUW4K3s3w4CEOpzG4VgDVlKwIHCzcgIU=
+  file: dist/fabric-py27-x86-64
+  skip_cleanup: true
+  on:
+    branch: master
