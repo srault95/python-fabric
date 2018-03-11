@@ -4,7 +4,7 @@ set -ex
 
 DIST_PATH=/app/dist
 SOURCE_MAIN=/usr/local/python2.7/bin/fab
-TARGET_NAME=fab
+TARGET_NAME=fabric-py27-x86-64
 
 pip install fabric3
 
